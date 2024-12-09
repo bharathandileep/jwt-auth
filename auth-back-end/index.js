@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 });
 
 
+// create new requests
 // invalid api URL
 app.use("**", (req, res) => {
   res.status(BAD_REQUEST).json({
