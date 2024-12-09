@@ -26,11 +26,6 @@ app.get("/", (req, res) => {
 });
 
 
-// added new changes in the auth
-// new git rules are added to the main branch
-// in emp branches
-// new rules been addedd
-
 // invalid api URL
 app.use("**", (req, res) => {
   res.status(BAD_REQUEST).json({
