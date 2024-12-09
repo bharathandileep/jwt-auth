@@ -25,8 +25,6 @@ app.get("/", (req, res) => {
   res.send("Custom CORS configuration is working");
 });
 
-
-// invalid api URL
 app.use("**", (req, res) => {
   res.status(BAD_REQUEST).json({
     messsge: "page not found!",
