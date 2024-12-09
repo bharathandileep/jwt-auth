@@ -25,6 +25,8 @@ app.get("/", (req, res) => {
   res.send("Custom CORS configuration is working");
 });
 
+
+// added new changes in the auth
 // invalid api URL
 app.use("**", (req, res) => {
   res.status(BAD_REQUEST).json({
@@ -45,4 +47,3 @@ connectDB()
   });
 
 
-  
